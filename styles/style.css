@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
+
+/* GLOBAL STYLES*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 80%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+}
+#page-wrapper {
+  background-color: #f0f1f2;
+}
+.logo {
+  display: flex;
+  font-family: "Playfair Display", cursive;
+  font-weight: 500;
+}
+img {
+  width: 100px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+#Home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  z-index: 4;
+}
+
+#Home button {
+  margin-top: 1.5rem;
+  width: 45%;
+  padding: 0.5rem 0rem;
+  background-color: #1a3853;
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid #1a3853;
+  border-radius: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+#Home button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+.modify-card {
+  border: 2px solid #1a3853;
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-between;
+  background-color: #e4d4ba;
+}
+.modify-card h2 {
+  background-color: #1a3853;
+  color: white;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.modify-card h3 {
+  font-size: 2.5rem;
+}
+.modify-card button {
+  padding: 0.5rem;
+  width: 65%;
+  align-self: center;
+  margin-bottom: 2rem;
+  background-color: #1a3853;
+  color: white;
+  border-radius: inherit;
+  border: 1px solid #1a3853;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+.modify-card p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 1.5rem;
+}
+i {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #1a3853;
+}
+label {
+  color: white;
+}
+input {
+  padding: 0;
+  outline: none;
+  margin-left: 2rem;
+  border: none;
+  width: 100%;
+}
+input[type="submit"] {
+  display: block;
+  width: 80%;
+  margin: 2rem auto 0rem;
+  background-color: #222d38;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #1a3853;
+  border-radius: 1.4rem;
+  padding: 0.4rem;
+  color: #fff;
+}
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.contact-us {
+  position: relative;
+}
+form {
+  padding: 0 1rem;
+}
+.icon {
+  width: 100%;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #222d38;
+  border-radius: 1.4rem;
+}
+#first-heading {
+  font-weight: 200;
+  margin: 10px 0px 10px -10px;
+  color: #d45339;
+}
+.content-info h1 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
+  font-family: "Alex Brush", cursive;
+}
+#Pricing {
+  margin: 30px 0px 0px 0px;
+}
+#Pricing button {
+  cursor: pointer;
+}
+#Pricing button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+#form input[type="submit"] {
+  cursor: pointer;
+}
+#form input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+/* DESKTOP VIEW */
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+  }
+  .logo {
+    margin: 1rem 2rem;
+  }
+  .styling {
+    font-size: 2.5rem;
+  }
+  img {
+    width: 4rem;
+    margin-right: 1rem;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.11rem;
+    color: #414240;
+    font-weight: bolder;
+  }
+  nav ul {
+    text-align: center;
+    display: flex;
+  }
+  #Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  .content-info {
+    margin: 7em 0rem 0rem 0rem;
+    line-height: 1;
+  }
+  .content-info h1 {
+    font-size: 3rem;
+  }
+  .content-info p {
+    font-size: 1.2rem;
+  }
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .about-us-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  #video {
+    width: 46%;
+  }
+  .contact-us {
+    background-color: #1a3853;
+    padding: 1rem 0.5rem;
+    padding-top: 0.1rem;
+    border-radius: 0.5rem;
+    width: 46%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  footer > ul {
+    display: flex;
+    margin-top: 5px;
+  }
+
+  footer > ul > li {
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  footer > span {
+    margin-top: 5px;
+  }
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+  #video {
+    display: none;
+  }
+
+  header {
+    min-width: 100vw;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .logo {
+    margin: 0.5rem auto;
+    width: 60%;
+  }
+
+  .styling {
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 4.5rem;
+    margin-right: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: auto;
+    background-color: #414240;
+    padding: 0.3rem;
+    border-radius: 1rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  #nav-bar {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .content-info {
+    text-align: center;
+    margin: 3rem 1rem 0rem 1rem;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .content-info h1 {
+    font-size: 2.8rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+  }
+  .contact-us {
+    max-width: 90%;
+    margin: 1rem auto;
+    background-color: #1a3853;
+    padding: 1rem 0.5rem;
+    padding-top: 0.1rem;
+    border-radius: 0.5rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  footer > ul {
+    display: flex;
+  }
+  footer > ul > li {
+    padding: 0 10px;
+    font-size: 1.5rem;
+  }
+  footer > span {
+    margin-top: 20px;
+  }
+}

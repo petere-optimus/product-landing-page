@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Landing Page</title>
+        <script src="https://kit.fontawesome.com/2b73c9a97e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+            <header id="header">
+                <div class="logo">
+                    <img id="header-img" src="https://www.dropbox.com/s/lq00oah5jerkmt8/snail%20logo.png?raw=1"
+                        alt="snail" />
+                    <h1 id="first-heading"><span class="styling">H</span>elix<span class="styling">F</span>arms
+                    </h1>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#Home" class="nav-link">HOME</a></li>
+                        <li><a href="#Pricing" class="nav-link">PRICING</a></li>
+                        <li><a href="#About-us" class="nav-link">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="Home">
+                <div class="content-info">
+                    <h1>Delicious and Nutritious Snails</h1>
+                    <p>Quick and Affordable Delivery all over Nigeria</p>
+                    <!--  <button>Explore</button> -->
+                </div>
+
+            </div>
+            <section id="Pricing">
+                <div class="card-container">
+                    <div id="first-card" class="modify-card">
+                        <h2>ORDINARY PACK</h2>
+                        <h3>&#8358 1500</h3>
+                        <p>4 snails well prepared with extra sauce</p>
+                        <button>Select</button>
+                    </div>
+                    <div id="second-card" class="modify-card">
+                        <h2>MEDIUM PACK</h2>
+                        <h3>&#8358 3000</h3>
+                        <p>6 snails well prepared with extra sauce</p>
+                        <button>Select</button>
+                    </div>
+                    <div id="third-card" class="modify-card">
+                        <h2>EXTRA LARGE PACK</h2>
+                        <h3>&#8358 5000</h3>
+                        <p>10 snails well prepared with extra sauce</p>
+                        <button>Select</button>
+                    </div>
+                </div>
+            </section>
+            <section id="About-us">
+                <div class="about-us-wrapper">
+                    <iframe id="video" width="" height="" src="https://www.youtube.com/embed/JX6BCI8nCvE"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="contact-us">
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <div class="icon"> <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-number">Phone number</label>
+                                <div class="icon"> <i class="fas fa-phone-alt"></i>
+                                    <input type="number" placeholder="Mobile">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="icon"> <i class="fas fa-envelope"></i>
+                                    <input type="email" required id="email" placeholder="Email required" name="email">
+                                </div>
+                                <input type="submit" id="submit" value="Get Started">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span>Copyright 2020, Helix Farms</span>
+            </footer>
+        </div>
+    </body>
+
+</html>
